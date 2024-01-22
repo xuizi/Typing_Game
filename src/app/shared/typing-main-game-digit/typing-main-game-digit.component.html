@@ -1,0 +1,36 @@
+<div class="principal-jogo">
+    <input type="text" class="input-field">
+    <div class="conteudo-caixa">
+        <div class="text-digitado">
+            <p></p>
+        </div>
+        <div class="conteudo">
+            <ul class="detalhe-resultados">
+                <li class="tempo">
+                    <p>Time Left:</p>
+                    <span><b>{{remainingTime}}</b></span>
+                </li>
+                <li class="erros">
+                    <p>Mistakes:</p>
+                    <span><b>{{mistakes}}</b></span>
+                </li>              
+                <li class="wpm">
+                    <p>WPM:</p>
+                    <span><b>{{wpm}}</b></span>
+                </li>
+                <li class="cpm">
+                    <p>CPM:</p>
+                    <span><b>{{cpm}}</b></span>
+                </li>
+            </ul>
+        </div>
+        <div class="button-container">
+            <button (click)="resetGame()" class="button-try-again">Try Again</button>
+        </div>
+        
+    </div>
+</div>
+
+<div *ngIf="controleRanking" class="ranking" (click)="enviarDadosRanking()">
+    <button class="buttonRanking">Finalizar!!!!</button>
+</div>

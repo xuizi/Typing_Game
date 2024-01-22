@@ -1,0 +1,80 @@
+.container-cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-teclado{
+    width: 160px;
+    height: 120px;
+}
+
+
+.inputAndPassword,.inputAndEmail,.inputAndUsername,.inputAndConfirmPassword {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    background-color: #EEEEEE;
+    width: 30vw;
+    border-radius: 25px;
+    margin-top: 20px;
+        input{
+            background: none;
+            border: none;
+            font-size: 20px;
+            color: #707070;
+        }
+        & ::placeholder{
+            color: #707070;
+        }
+}
+
+.botao-cadastro {
+    margin-top: 20px;
+    width: 170px;
+    height: 45px;
+    color: #4A4A4A;
+    border-radius: 25px;
+    font-size: 1.3rem;
+}
+
+.botao-cadastro:hover {
+    cursor: pointer;
+}
+
+.botao-login:hover{
+    cursor: pointer;
+}
+
+.formCadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registrar {
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.strongRegister {
+    font-weight: bold;
+}
+
+.strongRegister:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+p {
+    color: #8a8888;
+    margin-top: 7px;
+}
+
+.errorSenhas {
+    color: red;
+    font-weight: 700;
+}

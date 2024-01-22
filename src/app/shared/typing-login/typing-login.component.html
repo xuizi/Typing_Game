@@ -1,0 +1,25 @@
+<div class="container-login">
+
+    <img src="assets/teclado.svg" alt="Imagem de teclado" class="image-teclado">
+
+    <form [formGroup]="loginForm" class="formLogin" (ngSubmit)="postData(loginForm)">
+
+        <div class="inputAndImage">
+            <input type="text" name="" id="usernameId" class="inputUsername" placeholder="Username" formControlName="username">
+            <img src="assets/icone-username.svg" alt="Icone de username">
+        </div>
+        <p *ngIf="loginForm.get('username')?.errors">
+            Digite um nome</p>
+        <div class="inputAndPassword">
+            <input type="password" name="" id="passwordId" class="inputUsername" placeholder="Password" formControlName="password">
+            <img src="assets/icone-password.svg" alt="Icone de password">
+        </div>
+        <p *ngIf="loginForm.get('password')?.errors">
+            Digite uma senha
+        </p>
+        <button [disabled]="loginForm.invalid" class="botao-login" type="submit">Login</button>
+        <p *ngIf="controleLogin" class="errorLogin">Usuário ou senha incorreta</p>
+    </form>
+    <p class="registrar">Is new?&nbsp;&nbsp;<strong class="strongRegister" routerLink="/cadastro">Register!</strong></p>
+    <p class="registrar">Forgot password?&nbsp;&nbsp;<strong class="strongRegister" routerLink="/recuperar-senha">Recover!</strong></p>
+</div>

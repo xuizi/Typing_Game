@@ -1,0 +1,33 @@
+div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    background-color: #1e1e1e;
+}
+
+.imagem_e_nome {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 15px;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 3rem;
+}
+
+span {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+.logout {
+    padding-right:15px ;
+}
+
+.logout:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

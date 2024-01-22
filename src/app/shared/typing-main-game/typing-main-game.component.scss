@@ -1,0 +1,156 @@
+.relogioERanking {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 38vw;
+    padding-top: 5vw;
+}
+
+.timer {
+    color:#ffffff;
+    font-size: 5rem;
+}
+
+.ranking {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    height: 30px;
+    width: 150px;
+    background-color: #EEEEEE;
+    border-radius: 15px;
+    margin-right: 50px;
+        button{
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            color: #000000;
+        }
+        & ::placeholder{
+            color: #707070;
+        }
+}
+
+.ranking:hover {
+    cursor: pointer;
+}
+
+.start {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.buttonStart {
+    background-color: #3DC54B;
+    width: 380px;
+    height: 85px;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #ffffff;
+    border-radius: 25px;
+}
+
+.buttonStart:hover {
+    cursor: pointer;
+}
+
+.buttonRanking:hover {
+    cursor: pointer;
+}
+
+/////////////////////////////////////////////////////////////////////////
+
+.principal-jogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    background: #5a5a5f;
+    margin-left: 300px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.principal-jogo .conteudo-caixa {
+    padding: 13px 20px 0;
+    border-radius: 10px;
+    border: 1px solid #7c7c85;
+}
+
+.conteudo-caixa .text-digitado {
+    max-height: 255px;
+    overflow-y: auto;
+}
+
+.text-digitado::-webkit-scrollbar{
+    width: 0;
+}
+
+.text-digitado p {
+    font-size: 1.2rem;
+    text-align: justify;
+    letter-spacing: 1px;
+    word-break: break-all;
+}
+
+.conteudo-caixa .conteudo {
+    display: flex;
+    margin-top: 17px;
+    padding: 12px 0;
+    align-items: center;
+    border-top: 1px solid #7c7c85;
+    justify-content: space-between;
+}
+
+.conteudo-caixa .detalhe-resultados {
+    display: flex;
+    width: calc(100% - 140px);
+    justify-content: space-between;
+}
+
+.detalhe-resultados li {
+    height: 22px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.conteudo button {
+    outline: none;
+    outline: none;
+    width: 105px;
+    padding: 8px 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #252424;
+}
+
+.detalhe-resultados li:not(:first-child) {
+    padding-left: 22px;
+    border-left: 1px solid #7c7c85;
+}
+
+.detalhe-resultados li p {
+    font-size: 19px;
+}
+
+.detalhe-resultados li span {
+    display: block;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.detalhe-resultados li:not(:first-child) span {
+    font-weight: 500;
+}
+
+.detalhe-resultados li b {
+    font-weight: 500;
+}

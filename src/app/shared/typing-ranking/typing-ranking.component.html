@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="coroaEPlay">
+        <img src="assets/icone-coroa.svg" alt="icone de coroa" class="imgCoroa">
+        <div class="jogar" routerLink="/jogo-principal">
+            <button class="buttonPlay">Play!</button>
+            <img src="assets/icone-flecha.svg" alt="icone de flecha">
+        </div>
+    </div>
+</div>
+<p class="ranking">Ranking</p>
+<table class="tabela-ranking">
+    <thead width="200px">
+        <tr>
+            <th rowspan="2">Username</th>
+            <th rowspan="2">Mistakes</th>
+            <th rowspan="2">WPM</th>
+            <th rowspan="2">CPM</th>
+        </tr>
+    </thead>
+        <tr *ngFor="let jogador of jogadores">
+            <td>{{jogador.username}}</td>
+            <td>{{jogador.mistakes}}</td>
+            <td>{{jogador.wpm}}</td>
+            <td>{{jogador.cpm}}</td>
+        </tr>
+</table>

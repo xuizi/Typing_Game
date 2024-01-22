@@ -1,0 +1,38 @@
+<div class="container-cadastro">
+
+    <img src="assets/teclado.svg" alt="Imagem de teclado" class="image-teclado">
+
+    <form [formGroup]="cadastroForm" class="formCadastro" (ngSubmit)="postData(cadastroForm)">
+
+        <div class="inputAndUsername">
+            <input type="text" name="username" id="username" placeholder="Username" formControlName="username">
+            <img src="assets/icone-username.svg" alt="Icone de username">
+        </div>
+        <p *ngIf="cadastroForm.get('username')?.errors">
+            Digite um nome</p>
+        <div class="inputAndEmail">
+                <input type="text" name="email" id="email" placeholder="Email" formControlName="email">
+                <img src="assets/icone-email.svg" alt="Icone de email">
+            </div>
+            <p *ngIf="cadastroForm.get('email')?.errors">
+                Digite um e-mail válido</p>
+        <div class="inputAndPassword">
+            <input type="password" name="password" id="password" placeholder="Password" formControlName="password">
+            <img src="assets/icone-password.svg" alt="Icone de password">
+        </div>
+        <p *ngIf="cadastroForm.get('password')?.errors">
+            Digite uma senha
+        </p>
+        <div class="inputAndConfirmPassword">
+            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" formControlName="confirmPassword">
+            <img src="assets/icone-password-confirm.svg" alt="Icone de Confirmar password">
+        </div>
+        <p *ngIf="cadastroForm.get('confirmPassword')?.errors">
+            As senhas devem coincidir
+        </p>
+        <button [disabled]="cadastroForm.invalid" class="botao-cadastro" type="submit">Register</button>
+        <p *ngIf="controleSenhas" class="errorSenhas">As senhas devem coincidir</p>
+    </form>
+    <p class="registrar">Already registered?&nbsp;&nbsp;<strong class="strongRegister" routerLink="/">Log in</strong></p>
+</div>
+

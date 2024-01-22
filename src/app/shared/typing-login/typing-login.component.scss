@@ -1,0 +1,97 @@
+.container-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.image-teclado{
+    width: 160px;
+    height: 120px;
+}
+
+
+.inputAndImage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    background-color: #EEEEEE;
+    width: 30vw;
+    border-radius: 25px;
+    margin-top: 40px;
+        input{
+            background: none;
+            border: none;
+            font-size: 20px;
+            color: #707070;
+        }
+        & ::placeholder{
+            color: #707070;
+        }
+}
+
+.inputAndPassword {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    background-color: #EEEEEE;
+    width: 30vw;
+    border-radius: 25px;
+    margin-top: 30px;
+        input{
+            background: none;
+            border: none;
+            font-size: 20px;
+            color: #707070;
+        }
+        & ::placeholder{
+            color: #707070;
+        }
+}
+
+.botao-login {
+    margin-top: 20px;
+    width: 155px;
+    height: 45px;
+    color: #4A4A4A;
+    border-radius: 25px;
+    font-size: 1.3rem;
+}
+
+.botao-login:hover{
+    cursor: pointer;
+}
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registrar {
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.strongRegister {
+    font-weight: bold;
+}
+
+.strongRegister:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+p {
+    color: #8a8888;
+    margin-top: 7px;
+}
+
+.errorLogin {
+    color: red;
+    font-weight: 700;
+}

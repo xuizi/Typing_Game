@@ -1,0 +1,11 @@
+@import './config.scss/reset.scss';
+@import './config.scss/variables.scss';
+
+html {
+    font-family: 'Roboto',sans-serif;
+    background-color: var(--primary-color);
+}
+
+main {
+    box-sizing: border-box;
+}

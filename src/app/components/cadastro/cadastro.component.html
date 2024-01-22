@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+</head>
+<body ngClass="body">
+    <div class="container-principal">
+        <div class="titulo-h1">
+            <h1 ngClass="titulo">Cadastro</h1>
+        </div>
+        <div class="formulario-cadastro">
+            <form [formGroup]="cadastroForm"> <!-- Nome do meu formulário-->
+                <div class="nomeESobrenome">
+                    <div class="nome">
+                        <label for="" class="labelNome">
+                            Nome:
+                        </label>
+                            <input type="text" placeholder="Digite o seu nome" class="inputNome" formControlName="firstName">
+                            <p *ngIf="cadastroForm.get('firstName')?.errors">
+                                Digite um nome
+                            </p>
+                           
+                    </div>
+                    <div class="sobrenome">
+                        <label for="" class="labelSobrenome">
+                            Sobrenome:
+                        </label>
+                            <input type="text" placeholder="Digite a sua senha" class="inputSobrenome" formControlName="lastName">
+                            <p *ngIf="cadastroForm.get('lastName')?.errors">
+                                Digite um sobrenome
+                            </p>
+                    </div>
+                </div>
+                <div class="emailESenha">
+                    <div class="email">
+                        <label for="" class="labelEmail">
+                            Email:
+                        </label>
+                            <input type="text" placeholder="Digite o seu e-mail" class="inputEmail" formControlName="email">
+                            <p *ngIf="cadastroForm.get('email')?.errors">
+                                Digite um email válido
+                            </p>
+                    </div>
+                    <div class="password">
+                        <label for="" class="labelPassword">
+                            Password:
+                        </label>
+                            <input type="password" placeholder="Digite a sua senha" class="inputPassword" formControlName="password">
+                            <p *ngIf="cadastroForm.get('password')?.errors">
+                                Digite uma senha válida
+                            </p>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <!-- <button class="button" routerLink="/">Voltar</button> -->
+                    <button [disabled]="cadastroForm.invalid" class="button" routerLink="/">Registrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

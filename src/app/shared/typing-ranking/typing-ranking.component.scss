@@ -1,0 +1,70 @@
+.coroaEPlay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 44vw;
+    padding-top: 2vw;
+}
+
+span {
+    color:#ffffff;
+    font-size: 5rem;
+}
+
+.jogar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    height: 30px;
+    width: 120px;
+    background-color: #EEEEEE;
+    border-radius: 15px;
+    margin-right: 50px;
+        button{
+            background: none;
+            border: none;
+            font-size: 1.4rem;
+            color: #000000;
+        }
+        & ::placeholder{
+            color: #707070;
+        }
+}
+
+.jogar:hover {
+    cursor: pointer;
+}
+
+.buttonPlay:hover {
+    cursor: pointer;
+}
+
+.imgCoroa{
+    width: 150px;
+    fill: #ffffff;
+}
+
+.ranking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+table {
+    margin-left: 38vw;
+    margin-top: 30px;
+}
+
+table,th,td {
+    border: 1px solid #5B5B5B;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+td {
+    text-align: justify;
+}

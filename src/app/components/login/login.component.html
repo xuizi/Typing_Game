@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+</head>
+<body ngClass="body">
+    <h1 ngClass="titulo">Log In</h1>
+    <div class="registrar">
+        <p>Não tem um conta?</p>
+        <span class="registre" routerLink="/cadastro">Registre-se</span>
+    </div>
+    <div class="container">
+        <div class="form">
+            <form [formGroup]="loginForm"> <!-- Nome do meu formulário-->
+                <div>
+                    <label for="" class="email">
+                        Email
+                        <input type="text" placeholder="example@gmail.com" class="inputEmail" formControlName="email" autocomplete="email">
+                        <p *ngIf="loginForm.get('email')?.errors">
+                            Digite um e-mail válido
+                        </p>
+                       
+                    </label>
+                </div>
+                <div>
+                    <label for="" class="password">
+                        Password
+                        <input type="password" placeholder="XXXXXXXXX" class="inputPassword" formControlName="password">
+                        <p *ngIf="loginForm.get('password')?.errors">
+                            Digite uma senha válida
+                        </p>
+                    </label>
+                </div>
+                <button [disabled]="loginForm.invalid" class="button">Log In</button>
+            </form>
+        </div>
+       <div class="imagem-logo">
+           <img src="../../../assets/DvorakKey.webp" alt="">
+       </div>
+    </div>
+   
+</body>
+</html>
